@@ -15,7 +15,7 @@
 .experiencia-texto{
     font-size: 1.5rem;
     line-height: 1.33;
-    max-width: 40ch;
+    max-width: 50ch;
     margin-bottom: 60px;
     color: #525252;
 }
@@ -32,6 +32,21 @@
     margin-bottom: 20px;
     border-radius: 4px;
     position: relative;
+    color: #942469;
+
+
+}
+.projeto_exp{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 10px 20px;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    position: relative;
+    color: #942469;
+
 
 }
 .projeto::before{
@@ -45,6 +60,7 @@
     left: -4px;
 
 }
+
 .projeto-ano{
     position: absolute;
     top: 22px;
@@ -53,6 +69,7 @@
     text-align: right;
     width: 80px;
     font-size:  0.875rem;
+   
 }
 
 .projeto-titulo{
@@ -101,7 +118,8 @@
         width: initial;
         text-align: left;
         font-weight: bold;
-        color: #CBAD84;
+        color: #942469;
+        ;
     }
     
 }
