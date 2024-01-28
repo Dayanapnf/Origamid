@@ -1,0 +1,47 @@
+.header-bg{
+    background-color: #000000;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header-menu{
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+
+}
+
+.header-menu a{
+    padding: 16px 0px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+.header-menu a:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    margin-top: 4px;
+    transition: 0.4s;
+    position: absolute;
+}
+.header-menu a:hover:after{
+    width: 100%;
+}
