@@ -1,0 +1,19 @@
+html{
+    cursor: none;
+}
+
+.texto {
+    display: none;
+}
+
+.ativar {
+    display: block;
+}
+
+#circulo {
+    background: #999;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+}
