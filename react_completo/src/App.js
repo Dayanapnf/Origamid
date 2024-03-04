@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Atividade from './components/Atividade';
+import Atividade01 from './components/Atividade01';
+import Header from './components/Atividade02/Header';
+import Home from './components/Atividade02/Home';
+import AtvMap from './components/AtvMap';
+import Produtos from './components/Atividade02/Produtos';
 
 function App() {
+  const { pathname } = window.location;
+
+  let Component;
+  if (pathname === '/produtos') {
+    Component = Produtos;
+  } else {
+    Component = Home;
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Atividade /> */}
+      {/* <AtvMap /> */}
+      {/* <Atividade01 /> */}
+      <Header />
+      <Component />
     </div>
   );
 }
