@@ -7,6 +7,7 @@ import AtvMap from './components/AtvMap';
 import Produtos from './components/Atividade02/Produtos';
 import Produto from './components/Atividade03/Produto';
 import { useState } from 'react';
+import UseEfffect from './components/UseEfffect';
 
 function App() {
   const { pathname } = window.location;
@@ -35,11 +36,12 @@ function App() {
       {/* <Atividade01 /> */}
       {/* <Header /> */}
       {/* <Component /> */}
-      <button onClick={handleClick}>smartphone</button>
+      {/* <button onClick={handleClick}>smartphone</button>
       <button onClick={handleClick}>tablet</button>
       <button onClick={handleClick}>notebook</button>
       {carregando && <p>Carregando...</p>}
-      {!carregando && dados && <Produto dados={dados} />}
+      {!carregando && dados && <Produto dados={dados} />} */}
+      <UseEfffect />
     </div>
   );
 }
