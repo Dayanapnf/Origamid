@@ -8,6 +8,7 @@ import Produtos from './components/Atividade02/Produtos';
 import Produto from './components/Atividade03/Produto';
 import { useEffect, useState } from 'react';
 import UseEfffect from './components/UseEfffect';
+import UseRef from './components/UseRef';
 
 function App() {
   const { pathname } = window.location;
@@ -57,10 +58,11 @@ function App() {
       {carregando && <p>Carregando...</p>}
       {!carregando && dados && <Produto dados={dados} />} */}
       {/* <UseEfffect /> */}
-      <h1>Preferência: {produto}</h1>
+      {/* <h1>Preferência: {produto}</h1>
       <button onClick={handClick}>Notebook</button>
       <button onClick={handClick}>Smartphone</button>
-      <Produto produto={produto} />
+      <Produto produto={produto} /> */}
+      <UseRef />
     </div>
   );
 }
