@@ -9,6 +9,9 @@ import Produto from './components/Atividade03/Produto';
 import { useEffect, useState } from 'react';
 import UseEfffect from './components/UseEfffect';
 import UseRef from './components/UseRef';
+import Focus from './components/Focus';
+import { GlobalContext, GlobalStorage } from './components/GlobalContext';
+import ProdutoG from './components/ProdutoG';
 
 function App() {
   const { pathname } = window.location;
@@ -62,7 +65,11 @@ function App() {
       <button onClick={handClick}>Notebook</button>
       <button onClick={handClick}>Smartphone</button>
       <Produto produto={produto} /> */}
-      <UseRef />
+      {/* <UseRef /> */}
+      {/* <Focus /> */}
+      <GlobalStorage>
+        <ProdutoG />
+      </GlobalStorage>
     </div>
   );
 }
